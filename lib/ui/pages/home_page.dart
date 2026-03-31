@@ -28,8 +28,7 @@ class _HomePageContent extends StatelessWidget {
             icon: Icon(
               isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
             ),
-            onPressed: () =>
-                context.read<ThemeBloc>().add(ThemeToggled()),
+            onPressed: () => context.read<ThemeBloc>().add(ThemeToggled()),
           ),
         ],
       ),
@@ -83,14 +82,15 @@ class _HomePageContent extends StatelessWidget {
               const SizedBox(height: 24),
               Text(
                 'Welcome to MindfulChat',
-                style: (screenWidth > 600
-                        ? AppStyles.heading1
-                        : AppStyles.heading2)
-                    .copyWith(
-                  color: isDark
-                      ? AppColors.darkTextPrimary
-                      : AppColors.textPrimary,
-                ),
+                style:
+                    (screenWidth > 600
+                            ? AppStyles.heading1
+                            : AppStyles.heading2)
+                        .copyWith(
+                          color: isDark
+                              ? AppColors.darkTextPrimary
+                              : AppColors.textPrimary,
+                        ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 12),
@@ -120,7 +120,10 @@ class _HomePageContent extends StatelessWidget {
   }
 
   Widget _buildQuickActions(
-      BuildContext context, bool isDark, double screenWidth) {
+    BuildContext context,
+    bool isDark,
+    double screenWidth,
+  ) {
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 700),
@@ -130,8 +133,9 @@ class _HomePageContent extends StatelessWidget {
             Text(
               'Get Started',
               style: AppStyles.heading3.copyWith(
-                color:
-                    isDark ? AppColors.darkTextPrimary : AppColors.textPrimary,
+                color: isDark
+                    ? AppColors.darkTextPrimary
+                    : AppColors.textPrimary,
               ),
             ),
             const SizedBox(height: 16),
@@ -144,21 +148,27 @@ class _HomePageContent extends StatelessWidget {
                   label: 'Start Chatting',
                   color: AppColors.primary,
                   onTap: () => Navigator.pushReplacementNamed(
-                      context, RoutesName.chatPage),
+                    context,
+                    RoutesName.chatPage,
+                  ),
                 ),
                 _QuickActionButton(
                   icon: Icons.menu_book_rounded,
                   label: 'Browse Resources',
                   color: AppColors.sage,
                   onTap: () => Navigator.pushReplacementNamed(
-                      context, RoutesName.resourcesPage),
+                    context,
+                    RoutesName.resourcesPage,
+                  ),
                 ),
                 _QuickActionButton(
                   icon: Icons.self_improvement_rounded,
                   label: 'Breathing Exercise',
                   color: AppColors.lavender,
                   onTap: () => Navigator.pushReplacementNamed(
-                      context, RoutesName.chatPage),
+                    context,
+                    RoutesName.chatPage,
+                  ),
                 ),
               ],
             ),
@@ -179,8 +189,7 @@ class _HomePageContent extends StatelessWidget {
       _FeatureInfo(
         icon: Icons.spa_rounded,
         title: 'Mindfulness',
-        description:
-            'Guided breathing exercises and meditation techniques.',
+        description: 'Guided breathing exercises and meditation techniques.',
         color: AppColors.sage,
       ),
       _FeatureInfo(
@@ -208,8 +217,9 @@ class _HomePageContent extends StatelessWidget {
             Text(
               'How We Can Help',
               style: AppStyles.heading3.copyWith(
-                color:
-                    isDark ? AppColors.darkTextPrimary : AppColors.textPrimary,
+                color: isDark
+                    ? AppColors.darkTextPrimary
+                    : AppColors.textPrimary,
               ),
             ),
             const SizedBox(height: 16),

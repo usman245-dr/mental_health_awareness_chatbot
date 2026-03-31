@@ -1,14 +1,15 @@
 {
-    "name": "MindfulChat - Mental Health Awareness Chatbot",
+    "name": "MindfulChat - Free Mental Health Awareness Chatbot",
     "short_name": "MindfulChat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#F5F7FA",
     "theme_color": "#7EB8DA",
-    "description": "A safe space for mental health awareness, emotional support, and self-care education.",
+    "description": "Free AI mental health awareness chatbot offering emotional support, guided breathing exercises, mindfulness meditation, self-care tips, anxiety relief, depression help, and wellness resources. Your safe space for mental wellness 24/7.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
-    "categories": ["health", "lifestyle", "education"],
+    "categories": ["health", "lifestyle", "education", "medical"],
+    "lang": "en-US",
     "icons": [
         {
             "src": "icons/Icon-192.png",

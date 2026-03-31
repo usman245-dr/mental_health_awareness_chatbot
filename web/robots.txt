@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://usman245-dr.github.io/mental_health_awareness_chatbot/sitemap.xml
