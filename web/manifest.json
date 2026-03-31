@@ -1,0 +1,36 @@
+{
+    "name": "MindfulChat - Mental Health Awareness Chatbot",
+    "short_name": "MindfulChat",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F5F7FA",
+    "theme_color": "#7EB8DA",
+    "description": "A safe space for mental health awareness, emotional support, and self-care education.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "categories": ["health", "lifestyle", "education"],
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
