@@ -33,36 +33,27 @@ class _HomePageContent extends StatelessWidget {
           ),
         ],
       ),
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          return SingleChildScrollView(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(minHeight: constraints.maxHeight),
-              child: IntrinsicHeight(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 40),
-                      // Hero section
-                      _buildHeroSection(isDark, screenWidth),
-                      const SizedBox(height: 40),
-                      // Quick actions
-                      _buildQuickActions(context, isDark, screenWidth),
-                      const SizedBox(height: 40),
-                      // Features section
-                      _buildFeaturesSection(isDark, screenWidth),
-                      const SizedBox(height: 40),
-                      // Disclaimer
-                      _buildDisclaimer(isDark),
-                      const SizedBox(height: 40),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          );
-        },
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Column(
+            children: [
+              const SizedBox(height: 40),
+              // Hero section
+              _buildHeroSection(isDark, screenWidth),
+              const SizedBox(height: 40),
+              // Quick actions
+              _buildQuickActions(context, isDark, screenWidth),
+              const SizedBox(height: 40),
+              // Features section
+              _buildFeaturesSection(isDark, screenWidth),
+              const SizedBox(height: 40),
+              // Disclaimer
+              _buildDisclaimer(isDark),
+              const SizedBox(height: 40),
+            ],
+          ),
+        ),
       ),
     );
   }
